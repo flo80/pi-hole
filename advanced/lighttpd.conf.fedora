@@ -36,6 +36,7 @@ server.errorlog             = "/var/log/lighttpd/error.log"
 server.pid-file             = "/var/run/lighttpd.pid"
 server.username             = "lighttpd"
 server.groupname            = "lighttpd"
+server.bind                 = "@IPV4_ADDRESS@"
 server.port                 = 80
 accesslog.filename          = "/var/log/lighttpd/access.log"
 accesslog.format            = "%{%s}t|%V|%r|%s|%b"

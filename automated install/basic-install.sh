@@ -726,6 +726,8 @@ installConfigs() {
     chown ${LIGHTTPD_USER}:${LIGHTTPD_GROUP} /var/cache/lighttpd/compress
     mkdir -p /var/cache/lighttpd/uploads
     chown ${LIGHTTPD_USER}:${LIGHTTPD_GROUP} /var/cache/lighttpd/uploads
+
+    sed -i "s/@IPV4_ADDRESS@/$IPV4_ADDRESS/" /etc/lighttpd/lighttpd.conf
   fi
 }
 
